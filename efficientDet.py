@@ -1,4 +1,4 @@
-
+import torch.nn as nn
 
 class EfficientDet(nn.Module):
     def __init__(self, num_anchors=9, num_classes=20, compound_coef=0, model_name="efficientnet-b0"):
