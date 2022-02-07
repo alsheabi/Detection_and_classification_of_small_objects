@@ -6,7 +6,7 @@ from augmentation import Augmenter_flip_h,Augmenter_flip_v,Augmenter_grayscale,A
 from load_DS import CocoDataset, collater
 from scaling import Resizer
 from norm import Normalizer
-from src.model import EfficientDet
+from efficientDet import EfficientDet
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from tensorboardX import SummaryWriter
