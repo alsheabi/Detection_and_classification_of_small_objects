@@ -1,2 +1,1 @@
-# Detection_and_classification_of_small_objects
-Detection and classification of small objects
+# Detection and classification of small objects
