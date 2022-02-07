@@ -2,8 +2,7 @@
 import os
 import torch
 import numpy as np
-from PIL import Image
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 from pycocotools.coco import COCO
 import cv2
 class CocoDataset(Dataset):

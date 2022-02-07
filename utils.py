@@ -62,7 +62,8 @@ class ClipBoxes(nn.Module):
         return boxes
 
     """
-    adapted and modified from https://github.com/google/automl/blob/master/efficientdet/anchors.py by Zylo117
+    adapted and modified based on our datasets for ratios and scales values (After many experiments we adjust optimal values to detect small objects)
+
     """
 class Anchors(nn.Module):
     def __init__(self, pyramid_levels=None, strides=None, sizes=None, ratios=None, scales=None):
@@ -75,18 +76,12 @@ class Anchors(nn.Module):
         if sizes is None:
             self.sizes = [2 ** (x + 2) for x in self.pyramid_levels]
         if ratios is None:
-            #self.ratios = np.array([(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]) not works
-            #self.ratios = np.array([0.834, 1, 1.3]) #worse in Full
-            #self.ratios = np.array([0.434, 1, 1]) worse in Full
+            # ratio=h\w  that is the shape of the box( minimal box inside dataset according to image_w or image_h)
             self.ratios = np.array([0.634, 1, 1.577]) #good in Full
-            #self.ratios = np.array([0.5, 1, 2]) not bad in Full
-            #self.ratios = np.array([1, 1, 2]) 
 
         if scales is None:
-            #self.scales = np.array([2, 1.2599210498948732, 1.5874010519681994])
-            #self.scales = np.array([1, 0.506, 0.641])
+
             self.scales = np.array([0.4, 0.506, 0.641])
-            #self.scales = np.array([2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)])#[1, 1.2599210498948732, 1.5874010519681994]
 
     def forward(self, image):
         """Generates multiscale anchor boxes.

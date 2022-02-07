@@ -1,10 +1,6 @@
 import os
-import argparse
 import torch
-import torch.nn as nn
-import shutil
 import numpy as np
-from tqdm.autonotebook import tqdm
 import cv2
 colors = [(39, 129, 113), (164, 80, 133), (83, 122, 114), (99, 81, 172), (95, 56, 104), (37, 84, 86), (14, 89, 122),
           (80, 7, 65), (10, 102, 25), (90, 185, 109), (106, 110, 132), (169, 158, 85), (188, 185, 26)]

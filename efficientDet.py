@@ -1,5 +1,15 @@
 import torch.nn as nn
+import torch
+import math
+from model import BiFPN,Regressor,Classifier,EfficientNet
+from utils import BBoxTransform, ClipBoxes, Anchors
+from loss import FocalLoss
+from torchvision.ops.boxes import nms as nms_torch
 
+
+def nms(dets, thresh):
+    return nms_torch(dets[:, :4], dets[:, 4], thresh)
+    
 class EfficientDet(nn.Module):
     def __init__(self, num_anchors=9, num_classes=20, compound_coef=0, model_name="efficientnet-b0"):
         super(EfficientDet, self).__init__()
