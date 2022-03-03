@@ -54,7 +54,7 @@ class Detector():
 
 
 
-    def Train_Dataset(self, root_dir, coco_dir, img_dir, set_dir, batch_size=8, image_size=1024, use_gpu=True, num_workers=2):
+    def Train_Dataset(self, root_dir, coco_dir, img_dir, set_dir, batch_size=8, image_size=1024, use_gpu=True,Augmenter=None, num_workers=2):
         '''
         User function: Set training dataset parameters
         Dataset Directory Structure
@@ -123,12 +123,19 @@ class Detector():
                                                            "drop_last": True,
                                                            "collate_fn": collater,
                                                            "num_workers": self.system_dict["params"]["num_workers"]}
-
-        self.system_dict["local"]["training_set"] = CocoDataset(root_dir=self.system_dict["dataset"]["train"]["root_dir"]+"/" + self.system_dict["dataset"]["train"]["coco_dir"],
-                                                            img_dir = self.system_dict["dataset"]["train"]["img_dir"],
-                                                            set_dir = self.system_dict["dataset"]["train"]["set_dir"],
-                                                            transform = transforms.Compose([Normalizer(),Resizer(common_size = self.system_dict["params"]["image_size"])])#
-                                                            )
+        if(Augmenter==None):
+            self.system_dict["local"]["training_set"] = CocoDataset(root_dir=self.system_dict["dataset"]["train"]["root_dir"]+"/" + self.system_dict["dataset"]["train"]["coco_dir"],
+                                                    img_dir = self.system_dict["dataset"]["train"]["img_dir"],
+                                                    set_dir = self.system_dict["dataset"]["train"]["set_dir"],
+                                                    transform = transforms.Compose([Normalizer(),Resizer(common_size = self.system_dict["params"]["image_size"])])#
+                                                    )
+#         else:
+#             Augmenter
+#             self.system_dict["local"]["training_set"] = CocoDataset(root_dir=self.system_dict["dataset"]["train"]["root_dir"]+"/" + self.system_dict["dataset"]["train"]["coco_dir"],
+#                                                                 img_dir = self.system_dict["dataset"]["train"]["img_dir"],
+#                                                                 set_dir = self.system_dict["dataset"]["train"]["set_dir"],
+#                                                                 transform = transforms.Compose([Normalizer(),Resizer(common_size = self.system_dict["params"]["image_size"])])#
+#                                                                 )
         # >>> transforms.Compose([transforms.CenterCrop(10),transforms.PILToTensor(),transforms.ConvertImageDtype(torch.float),])
   
 
