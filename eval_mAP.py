@@ -352,7 +352,7 @@ def calcualte_mAP(minoverlap=0.5,gt_PATH=None,dr_PATH=None,img_PATH=None,output_
             temp_path = os.path.join(DR_PATH, (file_id + ".txt"))
             if not os.path.exists(temp_path):
                 error_msg = "Error. File not found: {}\n".format(temp_path)
-                error_msg += "(You can avoid this error message by running extra/intersect-gt-and-dr.py)"
+                error_msg += "(You can avoid this error message by running Intersect-gt-and-dr.py)"
                 error(error_msg)
             lines_list = file_lines_to_list(txt_file)
             # create ground-truth dictionary
@@ -429,7 +429,7 @@ def calcualte_mAP(minoverlap=0.5,gt_PATH=None,dr_PATH=None,img_PATH=None,output_
                 if class_index == 0:
                     if not os.path.exists(temp_path):
                         error_msg = "Error. File not found: {}\n".format(temp_path)
-                        error_msg += "(You can avoid this error message by running extra/intersect-gt-and-dr.py)"
+                        error_msg += "(You can avoid this error message by running Intersect-gt-and-dr.py)"
                         error(error_msg)
                 lines = file_lines_to_list(txt_file)
                 for line in lines:
