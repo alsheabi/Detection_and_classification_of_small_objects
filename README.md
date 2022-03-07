@@ -21,9 +21,8 @@ Here is our pytorch implementation of the model described in the [Paper](https:/
 
 ## Experiments
 Our Datasets divided  as shown in Table below
-| Datasets           | Train set |        | Valid set |        | Test set |        | Sum   |        |
+| Datasets | Train set(Image) |Train set(Object) | Valid set(Image) | Valid set(Object)| Test set(Image) |  Test set(Object)| Sum(Image) | Sum(Object)|
 | :----------------: | :-------- | :----: | :-------: | :----- | :------: | :----: | :---- | :----: |
-|                    | Image     | Object | Image     | Object | Image    | Object | Image | Object |
 | MAV-VID            | 12517     | 13842  | 4713      | 4717   | 1722     | 1729   | 18952 | 20288  |
 | Full-UAV           | 1959      | 2426   | 502       | 514    | 271      | 288    | 2732  | 3228   |
 | MAV-VID + Full-UAV | 14476     | 16268  | 5215      | 5231   | 1993     | 2017   | 21684 | 23516  |
@@ -39,13 +38,5 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 |-----------------------|:-------------------:|:-----------------:|:-----------------:|:-------------:|
 |   Baseline   |      IoU=0.50     |   area=   all   |   maxDets=100   |   0.461   |
 |   Average Precision   |      IoU=0.75     |   area=   all   |   maxDets=100   |   0.343   |
-|   Average Precision   |   IoU=0.50:0.95   |   area= small   |   maxDets=100   |   0.093   |
-|   Average Precision   |   IoU=0.50:0.95   |   area= medium  |   maxDets=100   |   0.358   |
-|   Average Precision   |   IoU=0.50:0.95   |   area=  large  |   maxDets=100   |   0.517   |
-|     Average Recall    |   IoU=0.50:0.95   |   area=   all   |   maxDets=1     |   0.268   |
-|     Average Recall    |   IoU=0.50:0.95   |   area=   all   |   maxDets=10    |   0.382   |
-|     Average Recall    |   IoU=0.50:0.95   |   area=   all   |   maxDets=100   |   0.403   |
-|     Average Recall    |   IoU=0.50:0.95   |   area= small   |   maxDets=100   |   0.117   |
-|     Average Recall    |   IoU=0.50:0.95   |   area= medium  |   maxDets=100   |   0.486   |
-|     Average Recall    |   IoU=0.50:0.95   |   area=  large  |   maxDets=100   |   0.625   |
+
 
