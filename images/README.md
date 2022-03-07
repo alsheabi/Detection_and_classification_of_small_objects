@@ -1,1 +1,1 @@
-##Some image prediction for both Chess and drones
+## Some image prediction for both Chess and drones
