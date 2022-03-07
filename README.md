@@ -40,3 +40,16 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 |   Average Precision   |      IoU=0.75     |   area=   all   |   maxDets=100   |   0.343   |
 
 
+|  <br> Datset  | Augmentation Technique                    | Epochs (stopped early) | Training Time(sec per epoch) | mAP          |
+| :------------ | :---------------------------------------- | :--------------------: | :--------------------------: | :----------- |
+| Chess         | Baseline                                  | 48                     | 25                           | 96\.71%      |
+| Chess         | Flip Horizontal                           | 45                     | 32                           | 95\.95%      |
+| Chess         | Flip Vertical                             | 69                     | 29                           | 94\.41%      |
+| Chess         | Flip Horizontal or Vertical               | 63                     | 29                           | **97\.35%**  |
+| Chess         | Flip Horizontal and Vertical              | 97                     | 25                           | 95\.16%      |
+| Chess         | Hue  ~~\\pm~~ 50~~^\\circ~~               | 65                     | 27                           | 93\.79%      |
+| Chess         | Saturation ~~\\pm~~ 50%                   | 95                     | 25                           | 95\.3%       |
+| Chess         | Brightness ~~\\pm~~ 50%                   | 65                     | 27                           | 89\.62%      |
+| Chess         | (Saturation and Brightness) ~~\\pm~~ 50%  | 55                     | 28                           | 95\.94%      |
+| Chess         | (Saturation or Brightness) ~~\\pm~~ 50%   | 53                     | 28                           | 89\.46%      |
+| Chess         | Grayscale                                 | 35                     | 25                           | 95\.82%      |
