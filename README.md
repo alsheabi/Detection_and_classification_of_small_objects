@@ -1,5 +1,4 @@
-# Master Thesis
-Detection and classification of small objects
+# Here is our pytorch implementation of the EfficientDet model to Detection and classification of small objects
 
 
 
