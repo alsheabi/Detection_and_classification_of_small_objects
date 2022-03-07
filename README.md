@@ -89,4 +89,4 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 
 Some predictions are shown below:
 
-<img src="images/Example_images_output.png" width="500">
+<img src="images/Example_images_output.png" width="800">
