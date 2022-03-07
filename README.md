@@ -12,6 +12,6 @@ Here is our pytorch implementation of the model described in the [Paper](https:/
 ## Datasets
 
 
-| Dataset                | Classes |    #Train images      |    #Validation images      |
-|------------------------|:---------:|:-----------------------:|:----------------------------:|
-| COCO2017               |    80   |          118k         |              5k            |
+| Dataset             | #Images   | Image size (AVG) |    #Object     |    Object per image (AVG)      | Average object area ratio (%) |
+|---------------------|:---------:|:----------------:|:--------------:|:--------------------------:|:---------------------------------:|
+| COCO2017            |    80     |          118k    |     5k         | ds                         | www                               |
