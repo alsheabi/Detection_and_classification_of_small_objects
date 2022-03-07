@@ -36,7 +36,7 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 
 |   Augmentation   |   Weight_download   |   area=   all   |   maxDets=100   |   0.314   |
 |-----------------------|:-------------------:|:-----------------:|:-----------------:|:-------------:|
-|   Baseline   |      IoU=0.50     |   area=   all   |   maxDets=100   |   0.461   |
+|   Baseline   |     [Weight](https://drive.google.com/drive/folders/1-MH4rrC0WU-QIc24EZ5wO9Q1-xwJgAdU?usp=sharing)     |   area=   all   |   maxDets=100   |   0.461   |
 |   Average Precision   |      IoU=0.75     |   area=   all   |   maxDets=100   |   0.343   |
 
 
