@@ -83,3 +83,10 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 |   Brightness     |     [Weight](https://drive.google.com/drive/folders/1-MH4rrC0WU-QIc24EZ5wO9Q1-xwJgAdU?usp=sharing)  | 7 | 3745   | 80\.65%      |
 |   Grayscale     |     [Weight](https://drive.google.com/drive/folders/1-MH4rrC0WU-QIc24EZ5wO9Q1-xwJgAdU?usp=sharing)    | 7    | 3514  | 78\.19%      |
 |   Saturation or Brightness     |     [Weight](https://drive.google.com/drive/folders/1-MH4rrC0WU-QIc24EZ5wO9Q1-xwJgAdU?usp=sharing) | 6   | 3590   | 82\.57%      |
+
+
+## Results
+
+Some predictions are shown below:
+
+<img src="images/Example_images_output.png" width="500">
