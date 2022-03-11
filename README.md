@@ -112,5 +112,4 @@ Appreciate the great work from the following repositories:
 - [google/automl](https://github.com/google/automl)
 - [zylo117/Yet-Another-EfficientDet-Pytorchh](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)
 - [signatrix/efficientdet](https://github.com/signatrix/efficientdet)
-- [vacancy/Synchronized-BatchNorm-PyTorch](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch)
 - [Cartucho/mAP](https://github.com/Cartucho/mAP)
