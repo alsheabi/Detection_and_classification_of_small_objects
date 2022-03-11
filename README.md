@@ -1,13 +1,26 @@
 # Here is our pytorch implementation of the EfficientDet model to Detection and classification of small objects
 
 
-
+## Our project running on Colab pro
 <a href="https://colab.research.google.com/drive/1F-iGXFB5HqrGG_5dBPtXkOAZebiEnzkf?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
 Here is our pytorch implementation of the model described in the [Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Tan_EfficientDet_Scalable_and_Efficient_Object_Detection_CVPR_2020_paper.pdf)
  EfficientDet: Scalable and Efficient Object Detection paper (Note: We also provide pre-trained weights, which you could see in [Drive](https://drive.google.com/drive/folders/1tyaq0c_YesoNot4c8n9M4uh89Njz7Sv_?usp=sharing)  at folder "train_weights"
+
+
+
+
+## What You Will Learn
+
+* How to load your custom image detection data from Roboflow
+* How to instatiate a pytorch EfficientDet model
+* How to train the EfficientDet model
+* How to use the model for quick inference
+* How to export the model weights for future inference
+* How to reload the model weights
+* How to evaluate mAP
 
 ## Datasets [Drive](https://drive.google.com/drive/folders/1tyaq0c_YesoNot4c8n9M4uh89Njz7Sv_?usp=sharing)
 
@@ -90,3 +103,14 @@ We trained our model by using Colab Pro <a href="https://colab.research.google.c
 Some predictions are shown below:
 
 <img src="images/Example_images_output.png" width="800">
+
+
+## References
+
+Appreciate the great work from the following repositories:
+
+- [google/automl](https://github.com/google/automl)
+- [zylo117/Yet-Another-EfficientDet-Pytorchh](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)
+- [signatrix/efficientdet](https://github.com/signatrix/efficientdet)
+- [vacancy/Synchronized-BatchNorm-PyTorch](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch)
+- [Cartucho/mAP](https://github.com/Cartucho/mAP)
